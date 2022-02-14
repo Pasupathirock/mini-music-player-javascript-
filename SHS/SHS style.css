@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(../SHS/SHS\ back.jpg) ;
+   background-size: cover;
+   background-position: center;
+   
+   
+
+}
+.grid{
+   display: grid;
+   width:100vw ;
+   height:100vh;  
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr; 
+  
+}
+
+header{
+    display: grid;
+    width: 100vw;
+    height: 80vh; 
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    
+}
+
+.container-left{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height:80vh;
+  
+}
+
+
+.container-right{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height:80vh;
+    
+}
+h1{
+    color: #fff;
+    background: linear-gradient(to top, hsl(320, 100%, 49%)40%,#fff 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.songItem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    margin: 25px 0;
+    background:  rgba(56, 55, 54, 0.534);
+    border-radius: 35px;
+}
+
+.songItem img{
+    width: 40px;
+    margin: 0 23px;
+    border-radius: 40px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+.timestamp i:hover{
+    color: rgb(172, 62, 62);
+    cursor: pointer;
+}
+
+footer{
+    height:5vh;
+    width: 100vw;
+    margin-top: 100px;
+    align-items: center;
+   
+}
+.bottom{
+    height:5vh;
+    width: 100vw;
+    padding-top: 10px;
+    padding-left:20px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center ;
+}   
+
+#myProgressBar{
+    width:95vw; 
+    cursor: pointer;
+}
+#masterPlay{
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+#masterPlay:hover{
+    color: rgb(209, 63, 63);
+    cursor: pointer;
+}

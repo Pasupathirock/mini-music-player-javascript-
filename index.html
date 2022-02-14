@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen Peaceful Music</title>
+    <script src="https://kit.fontawesome.com/b734e5aab0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search bar style.css">
+
+</head>
+<body>
+    <div class="container"> 
+  <header> 
+       
+        <div class="logo"></i> <h1>PeAcEMuSiC</h1>
+          <div  class="nav-dgn"> <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li> 
+           </ul> </div>
+          <div class="wrapper">
+            <div class="search-input">
+              <a href="" target="_blank" hidden></a>
+              <input type="text" placeholder="Search the music ...">
+              <div class="autocom-box">
+                <!-- here list are inserted from javascript -->
+              </div>
+              <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+  
+</header>
+
+<article>
+
+
+      <div class="container-left">
+            <h1 style="color: #fff;">CATEGORIES</h1><br>
+           <h3 style="text-indent: 30px;"><a href="#"><i class="fas fa-angle-right"></i> A-Z Movie Songs</a></h3><br>
+           <h3 style="text-indent: 30px;"><a href="../JS mini music player project/SHS/Super Hits Songs.html"><i class="fas fa-angle-right"></i> Super Hits Songs</a></h3><br>
+           <h3 style="text-indent: 30px;"><a href="#"><i class="fas fa-angle-right"></i> Famous MusicianSongs</a> </h3><br>
+        </div>
+    
+    <div class="container-right">
+
+      <div class="main">
+       
+        <div class="top">
+          <div class="lg"> <p id="logo"><i class="fa fa-music" aria-hidden="true">Music</i></p></div> 
+           <img id="track_image">
+            <div class="volume">
+
+           <p id="volume_show">80</p>
+           <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon" onclick="mute_sound()"></i>
+           <input type="range" min="0" max="100" value="80" onchange="volume_change()" id="volume">
+        </div>
+       </div> 
+     
+       <div class="bottom">
+        <p id="title">title.mp3</p>
+           <div class="show_song_no">
+              <p id="present">1</p>
+              <p>/</p>
+              <p id="total">5</p>  
+          </div>
+          
+          <div class="middle">
+              <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button> 
+              <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i> </button>
+              <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+          </div>
+         
+           <div class="duration">
+            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+           </div>
+           <button id="auto" onclick="autoplay_switch(0)">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+       
+      </div>
+
+
+
+
+
+  </article>
+    </div>
+       <script src="index.js"></script>
+       <script src="suggestions.js"></script>
+       <script src="search bar.js"></script>
+
+</body>
+</html>
